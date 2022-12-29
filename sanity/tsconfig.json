@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "ES2017",
     "lib": [
       "dom",
       "dom.iterable",
@@ -20,14 +20,13 @@
     "incremental": true
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "sanity/schemas/skill.js",
-    "sanity/schemas/project.js",
-    "sanity/schemas/pageInfo.js",
-    "sanity/schemas/index.ts",
-    "sanity/schemas/experience.js"
+    "schemas/skill.js",
+    "schemas/project.js",
+    "schemas/pageInfo.js",
+    "schemas/index.ts",
+    "schemas/experience.js"
   ],
   "exclude": [
     "node_modules"
