@@ -57,8 +57,9 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
 
       <Link href='#hero'>
         <footer className='sticky bottom-5 w-full cursor-pointer'>
-          <div className='flex items-center justify-center'>
-            <img className='h-12 w-12 rounded-full filter grayscale hover:grayscale-0 cursor-pointer border border-gray-500'
+          <div className='flex items-center justify-start pl-5'>
+            <img className='h-12 w-12 rounded-full filter grayscale hover:grayscale-0
+             cursor-pointer border border-gray-500'
               src="https://i.postimg.cc/26pbJKr7/Ready-Player-Me-Avatar-14.png" alt="" />
           </div>
         </footer>
