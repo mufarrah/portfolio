@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
@@ -27,12 +28,12 @@ function Hero({ pageInfo }: Props) {
     return (
         <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
             <BackgroundCircles />
-            <img className='relative rounded-full h-33 w-32 mx-auto object-cover'
-                src={urlFor(pageInfo?.heroImage).url()} />
+            <Image className='relative rounded-full h-33 w-32 mx-auto object-cover' width={1100} height={1000}
+                src={urlFor(pageInfo?.heroImage).url()} alt="" />
             <div className='z-20'>
                 <h2 className='text-sm uppercase text-gray-500 tracking-[15px]'>{pageInfo?.role}</h2>
                 <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
-                    <span className='mr-3'>Hi I'm {`${pageInfo?.name}`} <span className='text-[#EF476F]'>{text}</span></span>
+                    <span className='mr-3'>Hi I'm {pageInfo?.name} <span className='text-[#EF476F]'>{text}</span></span>
                     <Cursor cursorColor='#EF476F' />
                 </h1>
                 <div className='pt-5'>
