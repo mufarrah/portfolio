@@ -33,14 +33,14 @@ function About({ pageInfo }: Props) {
                 viewport={{ once: true }}
                 src={urlFor(pageInfo?.profilePic).url()}
                 className='-mb-32 mt-28 flex-shrink-0 w-40 h-40 rounded-full object-cover 
-                sm:w-56 sm:h-56 sm:mt-20 md:mb-0 md:mt-0 md:rounded-lg md:w-64 md:h-95 xl:w-[500px] xl:h-[600px]'
+                sm:mt-20 md:mb-0 md:mt-0 md:rounded-lg md:w-72 md:h-auto xl:w-[500px] xl:h-[600px]'
             />
 
             <div className='space-y-5 px-0 md:px-10'>
                 <h4 className='text-2xl font-semibold mt-20 sm:text-4xl md:mt-auto'>Here is some <span className='underline decoration-[#EF476F]'>
                     background
                 </span></h4>
-                <p className='text-xs sm:text-lg mb-20 pb-10 pt-0 sm:pb-0'>{pageInfo?.backgroundInformation}</p>
+                <p className='text-xs sm:text-base xl:text-xl mb-20 pb-10 pt-0 sm:pb-0'>{pageInfo?.backgroundInformation}</p>
             </div>
         </motion.div>
     )
